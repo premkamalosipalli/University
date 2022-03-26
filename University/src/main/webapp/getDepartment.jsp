@@ -28,7 +28,6 @@
 			</tbody>
 			</c:forEach>
 		</table>
-		
 	</div>
 	<div>
 	<c:forEach items="${result}" var="tableObj">

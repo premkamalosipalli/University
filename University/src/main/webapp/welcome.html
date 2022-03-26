@@ -5,31 +5,92 @@
 <title>Welcome</title>
 <style>
 div.scrollmenu {
-  background-color: #333;
-  overflow: auto;
-  white-space: nowrap;
-  padding-left: 0%;
+	background-color: #333;
+	overflow: auto;
+	white-space: nowrap;
+	padding-left: 0%;
 }
 
 div.scrollmenu a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
 }
 
 div.scrollmenu a:hover {
-  background-color: #777;
+	background-color: #777;
+}
+
+div.description ul {
+  text-align: center;
+  list-style-position: inside;
+}
+
+div.description li {
+  text-align: center;
+  list-style-position: inside;
+}
+
+div.description {
+	text-align: center;
 }
 </style>
 </head>
 <body>
-	<h1  style="text-align: center">Welcome to the University Database</h1>
+	<h1 style="text-align: center">Welcome to the University Database</h1>
 	<div class="scrollmenu">
 		<a href="#" class="active">Home</a> <a href="display.jsp">Display</a>
-		<a href="insertDepartment.jsp">Insert</a> <a href="update.jsp">Modify</a> <a
-			href="delete.jsp">Delete</a>
+		<a href="insertDepartment.jsp">Insert</a> <a href="update.jsp">Modify</a>
+		<a href="delete.jsp">Delete</a>
+	</div>
+	<div>
+		<p>The University database consists of various tables for storing and
+		performing operations on student and faculty.The above menu bar shows
+		four tabs where user can navigate from one page to another based on
+		the user requirement.</p>
+		<ol>
+			<li>Home</li>
+			<li>Display</li>
+			<li>Insert</li>
+			<li>Modify</li>
+			<li>Delete</li>
+		</ol>
+	</div>
+	<div>
+		<p><b>Home</b>: This is the present page used for welcoming the university database and there he can perform various operations. </p>
+		<p>
+		<b>Display</b>: This display the content of Instructor, department, and courses tables.
+				<ul>
+					<li>Program should ask the table name to display when selecting the display data option from the main menu.
+		 Then display the content of the selected table.</li>
+				</ul>
+				
+		
+		<p><b>Insert</b>: This is used add the functionality to insert record to the department table. 
+				<ul>
+					<li>User should be able to select the option to insert data from the main menu</li>
+					<li>User should be asked to enter each column data one after the other and once the final column data is inserted, 
+					it should insert the data to the department table.</li>
+				</ul>
+		 
+		<p><b>Modify</b>: This is used to add a main menu item to modify the budget of a given record of the department table
+				<ul>
+					<li>User should be able to select the modify budget menu option from the main menu.</li>
+					<li>The user is presented to enter the department name and the program displays the content of that tuple and asks from the user the new value for the department budget. 
+					The program then updates the budget of that department</li>
+				</ul>
+					
+		 
+		<p><b>Delete</b>: This is used to add a main menu item to delete a department from the department table
+				<ul>
+					<li>User should be able to select the delete department menu option from the main menu.</li>
+					<li>The user is presented to enter the department name and the program displays the information of that department. Then the program asks the user “Are you sure?”</li>
+					
+				</ul>
+			1.	If the user selects yes-> delete that department from the department table
+			2.	If the user selects no -> return to main menu 
 	</div>
 </body>
 </html>

@@ -81,9 +81,11 @@ body {
 		<div class="message"></div>
 		<span class="button yes">Yes</span> <span class="button no">No</span>
 	</div>
+	</c:forEach>
+	<!--  
 	<p hidden> You have selected not do delete the Department for the table.</p>
 	<p hidden> Click the link below to go back to home page.</p>
 	<p hidden> <a href="welcome.html">Home Page</a></p>
-	</c:forEach>
+	-->	
 </body>
 </html>

@@ -15,7 +15,7 @@ $(function () {
         doConfirm("Are you sure?", function yes() {
             form.submit();
         }, function no() {
-            $("p").show();
+            window.location.href = "welcome.html";
         });
     });
 });
